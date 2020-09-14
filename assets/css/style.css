@@ -1,0 +1,375 @@
+/*
+Font: pokemon_gbregular
+Author: Jackster Productions
+https://www.pokemondungeon.com/downloads/fonts/jackster-productions_pokemon-gb.zip
+
+Converted to webfont
+Font Squirrel
+https://www.fontsquirrel.com/tools/webfont-generator
+
+All logos, trademarks, and trade names used herein are the property of their respective owners.
+*/
+
+@font-face {
+    font-family: 'pokemon_gbregular';
+    src: url('../fonts/pokemon_gb-webfont.woff2') format('woff2'),
+         url('../fonts/pokemon_gb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.panel {
+  width: 135px;
+  height: 50px;
+  border-color: black;
+  margin-left: 20px;
+}
+
+.panel-col-4.panel {
+  width: 135px;
+  height: 75px;
+  border-color: black;
+  margin-left: 20px;
+}
+
+.panel-col-5.panel {
+  width: 135px;
+  height: 100px;
+  border-color: black;
+  margin-left: 20px;
+}
+
+.panel-col-6.panel {
+  width: 135px;
+  height: 125px;
+  border-color: black;
+  margin-left: 20px;
+}
+
+.msg {
+  color: black;
+  font-family: 'pokemon_gbregular';
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.iv {
+  color: black;
+  font-family: 'pokemon_gbregular';
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.iv-col-2.iv {
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+.iv-col-3.iv {
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+.iv-col-4.iv {
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+.iv-col-5.iv {
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+input {
+ outline:none;
+}
+
+input.transparent-input{
+   background-color:rgba(0,0,0,0) !important;
+   border:none !important;
+}
+
+.form-control {
+  font-family: 'pokemon_gbregular';
+  font-size: 14px;
+  color: black;
+  border: 0;
+  box-shadow: none;
+}
+
+select.form-control {
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+   background-color:rgba(0,0,0,0) !important;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: black;
+}
+
+#checkbox-1 {
+  margin-left: -20px;
+  margin-top: 6px;
+}
+
+.form-control-col-1.form-control {
+  margin-top: -60px;
+  margin-bottom: -3px;
+  margin-left: 1px;
+  cursor: default;
+}
+
+.form-control-col-2.form-control {
+  font-size: 10px;
+  cursor: default;
+}
+
+.input-field-col-2 {
+  margin-top: -70px;
+  margin-bottom: -8px;
+}
+
+.input-field-col-3-1 {
+  margin-top: -76px;
+  margin-bottom: -14px;
+}
+
+.input-field-col-3-2 {
+  margin-bottom: -14px;
+}
+
+.input-field-col-3-3 {
+  margin-bottom: -4px;
+}
+
+.input-field-col-4-1 {
+  margin-top: -100px;
+  margin-bottom: -11px;
+}
+
+.input-field-col-4-2 {
+  margin-bottom: -14px;
+}
+
+.input-field-col-4-3 {
+  margin-top: 3px;
+}
+
+.input-field-col-4-4 {
+  margin-top: -12px;
+  margin-bottom: -4px;
+}
+
+.input-field-col-5-1 {
+  margin-top: -123px;
+  margin-bottom: -11px;
+}
+
+.input-field-col-5-2 {
+  margin-bottom: -11px;
+}
+
+.input-field-col-5-3 {
+  margin-bottom: -10px;
+}
+
+.input-field-col-5-4 {
+  margin-bottom: -10px;
+}
+
+.input-field-col-5-5 {
+  margin-bottom: -3.5px;
+}
+
+.input-field-col-6-1 {
+  margin-top: -149px;
+  margin-bottom: -9px;
+}
+
+.input-field-col-6-2 {
+  margin-bottom: -10px;
+}
+
+.input-field-col-6-3 {
+  margin-bottom: -10px;
+}
+
+.input-field-col-6-4 {
+  margin-bottom: -8px;
+}
+
+.input-field-col-6-5 {
+  margin-bottom: -9px;
+}
+
+.input-field-col-6-6 {
+  margin-bottom: -3.5px;
+}
+
+
+/* https://stackoverflow.com/a/1193338/10025507 */
+
+div.minimize input {
+    background:url(../img/min.png) no-repeat;
+    cursor:pointer;
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-left: 140px;
+    margin-top: -65px;
+}
+
+.button-min-2 {
+  margin-top: -65px;
+  margin-left: 140px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.button-min-3 {
+  margin-top: -65px;
+  margin-left: 140px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.button-min-4 {
+  margin-top: -90px;
+  margin-left: 140px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.button-min-5 {
+  margin-top: -115px;
+  margin-left: 140px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.button-min-6 {
+  margin-top: -140px;
+  margin-left: 140px;
+  width: 10px;
+  height: 10px;
+}
+
+.panel-default.hp {
+  background-color: #2980b9;
+}
+
+.panel-default.atk {
+  background-color: #e74c3c;
+}
+
+.panel-default.def {
+  background-color: #e67e22;
+}
+
+.panel-default.spdef {
+  background-color: #8e44ad;
+}
+
+.panel-default.spd {
+  background-color: #f1c40f;
+}
+
+.panel-default.nat {
+  background-color: #27ae60;
+}
+
+.panel-default.hp-atk {
+  background: linear-gradient(#2980b9 50%, #e74c3c 50%);
+}
+
+.panel-default.hp-def {
+  background: linear-gradient(#2980b9 50%, #e67e22 50%);
+}
+
+.panel-default.atk-def{
+  background: linear-gradient(#e74c3c 50%, #e67e22 50%);
+}
+
+.panel-default.atk-spdef {
+  background: linear-gradient(#e74c3c 50%, #8e44ad 50%);
+}
+
+.panel-default.def-spdef {
+  background: linear-gradient(#e67e22 50%, #8e44ad 50%);
+}
+
+.panel-default.def-spd {
+  background: linear-gradient(#e67e22 50%, #f1c40f 50%);
+}
+
+.panel-default.atk-nat {
+  background: linear-gradient(#e74c3c 50%, #27ae60 50%);
+}
+
+/* https://stackoverflow.com/a/47591284/10025507 */
+
+.panel-default.hp-atk-def {
+  background: linear-gradient(#2980b9 0, #2980b9 33%, #e74c3c 33%, #e74c3c 66%, #e67e22 66%, #e67e22 100%)
+}
+
+.panel-default.atk-def-spdef {
+  background: linear-gradient(#e74c3c 0, #e74c3c 33%, #e67e22 33%, #e67e22 66%, #8e44ad 66%, #8e44ad 100%)
+}
+
+.panel-default.def-spdef-spd {
+  background: linear-gradient(#e67e22 0, #e67e22 33%, #8e44ad 33%, #8e44ad 66%, #f1c40f 66%, #f1c40f 100%)
+}
+
+.panel-default.atk-def-nat {
+  background: linear-gradient(#e74c3c 0, #e74c3c 33%, #e67e22 33%, #e67e22 66%, #27ae60 66%, #27ae60 100%)
+}
+
+.panel-default.hp-atk-def-spdef {
+  background: linear-gradient(#2980b9 0, #2980b9 25%, #e74c3c 25%, #e74c3c 50%, #e67e22 50%, #e67e22 75%, #8e44ad 75%, #8e44ad 100%)
+}
+
+.panel-default.atk-def-spdef-spd {
+  background: linear-gradient(#e74c3c 0, #e74c3c 25%, #e67e22 25%, #e67e22 50%, #8e44ad 50%, #8e44ad 75%, #f1c40f 75%, #f1c40f 100%)
+}
+
+.panel-default.atk-def-spdef-nat {
+  background: linear-gradient(#e74c3c 0, #e74c3c 25%, #e67e22 25%, #e67e22 50%, #8e44ad 50%, #8e44ad 75%, #27ae60 75%, #27ae60 100%)
+}
+
+.panel-default.hp-atk-def-spdef-spd {
+  background: linear-gradient(#2980b9 0, #2980b9 20%, #e74c3c 20%, #e74c3c 40%, #e67e22 40%, #e67e22 60%, #8e44ad 60%, #8e44ad 80%, #f1c40f 80%, #f1c40f 100%)
+}
+
+.panel-default.atk-def-spdef-spd-nat {
+  background: linear-gradient(#e74c3c 0, #e74c3c 20%, #e67e22 20%, #e67e22 40%, #8e44ad 40%, #8e44ad 60%, #f1c40f 60%, #f1c40f 80%, #27ae60 80%, #27ae60 100%)
+}
+
+.panel-default.hp-atk-def-spdef-spd-nat {
+  background: linear-gradient(#2980b9 0, #2980b9 16.66%, #e74c3c 16.66%, #e74c3c 33.32%, #e67e22 33.32%, #e67e22 49.48%, #8e44ad 49.48%, #8e44ad 66.64%, #f1c40f 66.64%, #f1c40f 83.3%, #27ae60 83.3%, #27ae60 100%)
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+connection {
+    border: 1px solid gray;
+    border-radius: 10px;
+}

@@ -1,0 +1,2508 @@
+<html>
+
+<head>
+  <title>Irrion</title>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/js/build.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/toggle.min.css">
+
+  <link rel="icon" type="icon" href="assets/img/kris.gif" />
+
+</head>
+
+<!-- Bootstrap Grid https://buildbootstrap.com/ -->
+<br>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-1" class="panel panel-default hp">
+      <input id="checkbox-1-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-3" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-3"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <input id="field-1-1" type="text" class="form-control form-control-col-1 transparent-input input-sm input-field-col-1" placeholder="HP" readonly>
+      </div>
+
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-1" class="panel panel-default hp-atk">
+      <input id="checkbox-2-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-3" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-3"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-1" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="HP" readonly>
+      <input id="field-2-2" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Attack" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize21()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-2" class="panel panel-default atk">
+      <input id="checkbox-1-4" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-4"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-5" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-5"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-6" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-6"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-2" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-1" class="panel panel-default hp-atk-def">
+      <input id="checkbox-3-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-3" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-3"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-1" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="HP" readonly>
+      <input id="field-3-2" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Attack" readonly>
+      <input id="field-3-3" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Defense" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize37()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-3" class="panel panel-default hp">
+      <input id="checkbox-1-7" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-7"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-8" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-8"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-9" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-9"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-3" class="form-control form-control-col-1 transparent-input" disabled>
+          <option selected>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-2" class="panel panel-default hp-def">
+      <input id="checkbox-2-4" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-4"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-5" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-5"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-6" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-6"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-3" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="HP" readonly>
+      <input id="field-2-4" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize22()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-4" class="panel panel-default def">
+      <input id="checkbox-1-10" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-10"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-11" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-11"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-12" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-12"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-4" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-4-1" class="panel panel-default hp-atk-def-spdef panel-col-4">
+      <input id="checkbox-4-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-4-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-4-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-4-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-4-3" class="toggle-ball ball-col-4" type="checkbox">
+      <label for="checkbox-4-3"></label>
+      <div class="ball"></div>
+
+      <input id="field-4-1" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-1" placeholder="HP" readonly>
+      <input id="field-4-2" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-2" placeholder="Attack" readonly>
+      <input id="field-4-3" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-3" placeholder="Defense" readonly>
+      <input id="field-4-4" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-4" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-4">4x31</div>
+
+      <input class="button-min-4" onclick="minimize45()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-5" class="panel panel-default atk">
+      <input id="checkbox-1-13" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-13"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-14" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-14"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-15" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-15"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-5" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-3" class="panel panel-default atk-def">
+      <input id="checkbox-2-7" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-7"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-8" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-8"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-9" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-9"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-5" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-6" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize23()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-6" class="panel panel-default def">
+      <input id="checkbox-1-16" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-16"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-17" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-17"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-18" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-18"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-6" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-2" class="panel panel-default atk-def-spdef">
+      <input id="checkbox-3-4" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-4"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-5" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-5"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-6" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-6"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-4" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Attack" readonly>
+      <input id="field-3-5" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Defense" readonly>
+      <input id="field-3-6" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize38()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-7" class="panel panel-default atk">
+      <input id="checkbox-1-19" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-19"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-20" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-20"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-21" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-21"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-7" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-4" class="panel panel-default atk-spdef">
+      <input id="checkbox-2-10" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-10"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-11" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-11"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-12" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-12"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-7" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-8" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize24()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-8" class="panel panel-default spdef">
+      <input id="checkbox-1-22" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-22"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-23" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-23"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-24" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-24"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-8" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-5-1" class="panel panel-default hp-atk-def-spdef-spd panel-col-5">
+      <input id="checkbox-5-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-5-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-5-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-5-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-5-3" class="toggle-ball ball-col-5" type="checkbox">
+      <label for="checkbox-5-3"></label>
+      <div class="ball"></div>
+
+      <input id="field-5-1" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-1" placeholder="HP" readonly>
+      <input id="field-5-2" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-2" placeholder="Attack" readonly>
+      <input id="field-5-3" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-3" placeholder="Defense" readonly>
+      <input id="field-5-4" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-4" placeholder="Sp. Def" readonly>
+      <input id="field-5-5" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-5" placeholder="Speed" readonly>
+      <div class="iv iv-col-5">5x31</div>
+
+      <input class="button-min-5" onclick="minimize49()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-9" class="panel panel-default atk">
+      <input id="checkbox-1-25" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-25"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-26" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-26"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-27" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-27"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-9" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-5" class="panel panel-default atk-def">
+      <input id="checkbox-2-13" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-13"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-14" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-14"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-15" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-15"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-9" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-10" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize25()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-10" class="panel panel-default def">
+      <input id="checkbox-1-28" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-28"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-29" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-29"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-30" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-30"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-10" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-3" class="panel panel-default atk-def-spdef">
+      <input id="checkbox-3-7" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-7"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-8" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-8"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-9" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-9"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-7" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Attack" readonly>
+      <input id="field-3-8" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Defense" readonly>
+      <input id="field-3-9" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize39()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-11" class="panel panel-default atk">
+      <input id="checkbox-1-31" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-31"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-32" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-32"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-33" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-33"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-11" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-6" class="panel panel-default atk-spdef">
+      <input id="checkbox-2-16" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-16"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-17" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-17"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-18" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-18"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-11" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-12" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize26()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-12" class="panel panel-default spdef">
+      <input id="checkbox-1-34" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-34"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-35" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-35"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-36" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-36"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-12" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-4-2" class="panel panel-default atk-def-spdef-spd panel-col-4">
+      <input id="checkbox-4-4" class="toggle-male" type="checkbox">
+      <label for="checkbox-4-4"></label>
+      <div class="male"></div>
+      <input id="checkbox-4-5" class="toggle-female" type="checkbox">
+      <label for="checkbox-4-5"></label>
+      <div class="female"></div>
+      <input id="checkbox-4-6" class="toggle-ball ball-col-4" type="checkbox">
+      <label for="checkbox-4-6"></label>
+      <div class="ball"></div>
+
+      <input id="field-4-5" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-1" placeholder="Attack" readonly>
+      <input id="field-4-6" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-2" placeholder="Defense" readonly>
+      <input id="field-4-7" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-3" placeholder="Sp. Def" readonly>
+      <input id="field-4-8" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-4" placeholder="Speed" readonly>
+      <div class="iv iv-col-4">4x31</div>
+
+      <input class="button-min-4" onclick="minimize46()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-13" class="panel panel-default def">
+      <input id="checkbox-1-37" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-37"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-38" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-38"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-39" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-39"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-13" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-7" class="panel panel-default def-spdef">
+      <input id="checkbox-2-19" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-19"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-20" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-20"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-21" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-21"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-13" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Defense" readonly>
+      <input id="field-2-14" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize27()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-14" class="panel panel-default spdef">
+      <input id="checkbox-1-40" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-40"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-41" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-41"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-42" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-42"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-14" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-4" class="panel panel-default def-spdef-spd">
+      <input id="checkbox-3-10" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-10"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-11" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-11"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-12" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-12"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-10" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Defense" readonly>
+      <input id="field-3-11" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Sp. Def" readonly>
+      <input id="field-3-12" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Speed" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize40()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-15" class="panel panel-default def">
+      <input id="checkbox-1-43" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-43"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-44" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-44"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-45" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-45"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-15" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-8" class="panel panel-default def-spd">
+      <input id="checkbox-2-22" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-22"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-23" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-23"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-24" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-24"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-15" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Defense" readonly>
+      <input id="field-2-16" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Speed" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize28()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-16" class="panel panel-default spd">
+      <input id="checkbox-1-46" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-46"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-47" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-47"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-48" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-48"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-16" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option selected>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-6-1" class="panel panel-default hp-atk-def-spdef-spd-nat panel-col-6">
+      <input id="checkbox-6-1" class="toggle-male" type="checkbox">
+      <label for="checkbox-6-1"></label>
+      <div class="male"></div>
+      <input id="checkbox-6-2" class="toggle-female" type="checkbox">
+      <label for="checkbox-6-2"></label>
+      <div class="female"></div>
+      <input id="checkbox-6-3" class="toggle-ball ball-col-6" type="checkbox">
+      <label for="checkbox-6-3"></label>
+      <div class="ball"></div>
+
+      <input id="field-6-1" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-1" placeholder="HP" readonly>
+      <input id="field-6-2" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-2" placeholder="Attack" readonly>
+      <input id="field-6-3" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-3" placeholder="Defense" readonly>
+      <input id="field-6-4" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-4" placeholder="Sp. Def" readonly>
+      <input id="field-6-5" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-5" placeholder="Speed" readonly>
+      <input id="field-6-6" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-6-6" placeholder="Natured" readonly>
+      <div class="iv iv-col-6">5x31</div>
+
+      <input class="button-min-6" onclick="minimize51()" type="image" src="assets/img/min.png" />
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-17" class="panel panel-default atk">
+      <input id="checkbox-1-49" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-49"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-50" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-50"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-51" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-51"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-17" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-9" class="panel panel-default atk-def">
+      <input id="checkbox-2-25" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-25"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-26" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-26"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-27" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-27"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-17" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-18" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize29()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-18" class="panel panel-default def">
+      <input id="checkbox-1-52" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-52"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-53" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-53"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-54" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-54"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-18" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-5" class="panel panel-default atk-def-spdef">
+      <input id="checkbox-3-13" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-13"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-14" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-14"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-15" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-15"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-13" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Attack" readonly>
+      <input id="field-3-14" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Defense" readonly>
+      <input id="field-3-15" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize41()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-19" class="panel panel-default atk">
+      <input id="checkbox-1-55" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-55"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-56" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-56"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-57" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-57"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-19" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-10" class="panel panel-default atk-spdef">
+      <input id="checkbox-2-28" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-28"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-29" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-29"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-30" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-30"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-19" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-20" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize30()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-20" class="panel panel-default spdef">
+      <input id="checkbox-1-58" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-58"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-59" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-59"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-60" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-60"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-20" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-4-3" class="panel panel-default atk-def-spdef-spd panel-col-4">
+      <input id="checkbox-4-7" class="toggle-male" type="checkbox">
+      <label for="checkbox-4-7"></label>
+      <div class="male"></div>
+      <input id="checkbox-4-8" class="toggle-female" type="checkbox">
+      <label for="checkbox-4-8"></label>
+      <div class="female"></div>
+      <input id="checkbox-4-9" class="toggle-ball ball-col-4" type="checkbox">
+      <label for="checkbox-4-9"></label>
+      <div class="ball"></div>
+
+      <input id="field-4-9" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-1" placeholder="Attack" readonly>
+      <input id="field-4-10" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-2" placeholder="Defense" readonly>
+      <input id="field-4-11" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-3" placeholder="Sp. Def" readonly>
+      <input id="field-4-12" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-4" placeholder="Speed" readonly>
+      <div class="iv iv-col-4">4x31</div>
+
+      <input class="button-min-4" onclick="minimize47()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-21" class="panel panel-default def">
+      <input id="checkbox-1-61" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-61"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-62" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-62"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-63" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-63"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-21" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-11" class="panel panel-default def-spdef">
+      <input id="checkbox-2-31" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-31"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-32" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-32"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-33" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-33"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-21" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Defense" readonly>
+      <input id="field-2-22" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize31()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-22" class="panel panel-default spdef">
+      <input id="checkbox-1-64" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-64"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-65" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-65"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-66" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-66"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-22" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-6" class="panel panel-default def-spdef-spd">
+      <input id="checkbox-3-16" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-16"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-17" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-17"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-18" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-18"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-16" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Defense" readonly>
+      <input id="field-3-17" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Sp. Def" readonly>
+      <input id="field-3-18" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Speed" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize42()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-23" class="panel panel-default def">
+      <input id="checkbox-1-67" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-67"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-68" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-68"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-69" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-69"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-23" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-12" class="panel panel-default def-spd">
+      <input id="checkbox-2-34" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-34"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-35" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-35"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-36" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-36"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-23" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Defense" readonly>
+      <input id="field-2-24" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Speed" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize32()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-24" class="panel panel-default spd">
+      <input id="checkbox-1-70" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-70"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-71" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-71"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-72" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-72"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-24" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option selected>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-5-2" class="panel panel-default atk-def-spdef-spd-nat panel-col-5">
+      <input id="checkbox-5-4" class="toggle-male" type="checkbox">
+      <label for="checkbox-5-4"></label>
+      <div class="male"></div>
+      <input id="checkbox-5-5" class="toggle-female" type="checkbox">
+      <label for="checkbox-5-5"></label>
+      <div class="female"></div>
+      <input id="checkbox-5-6" class="toggle-ball ball-col-5" type="checkbox">
+      <label for="checkbox-5-6"></label>
+      <div class="ball"></div>
+
+      <input id="field-5-6" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-1" placeholder="Attack" readonly>
+      <input id="field-5-7" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-2" placeholder="Defense" readonly>
+      <input id="field-5-8" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-3" placeholder="Sp. Def" readonly>
+      <input id="field-5-9" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-4" placeholder="Speed" readonly>
+      <input id="field-5-10" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-5-5" placeholder="Natured" readonly>
+      <div class="iv iv-col-5">4x31</div>
+
+      <input class="button-min-5" onclick="minimize50()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-25" class="panel panel-default atk">
+      <input id="checkbox-1-73" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-73"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-74" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-74"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-75" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-75"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-25" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-13" class="panel panel-default atk-def">
+      <input id="checkbox-2-37" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-37"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-38" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-38"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-39" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-39"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-25" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-26" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize33()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-26" class="panel panel-default def">
+      <input id="checkbox-1-76" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-76"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-77" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-77"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-78" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-78"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-26" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-7" class="panel panel-default atk-def-spdef">
+      <input id="checkbox-3-19" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-19"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-20" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-20"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-21" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-21"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-19" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Attack" readonly>
+      <input id="field-3-20" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Defense" readonly>
+      <input id="field-3-21" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-3">3x31</div>
+
+      <input class="button-min-3" onclick="minimize43()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-27" class="panel panel-default atk">
+      <input id="checkbox-1-79" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-79"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-80" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-80"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-81" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-81"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-27" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-14" class="panel panel-default atk-spdef">
+      <input id="checkbox-2-40" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-40"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-41" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-41"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-42" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-42"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-27" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-28" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Sp. Def" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize34()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-28" class="panel panel-default spdef">
+      <input id="checkbox-1-82" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-82"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-83" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-83"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-84" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-84"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-28" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option selected>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-4-4" class="panel panel-default atk-def-spdef-nat panel-col-4">
+      <input id="checkbox-4-10" class="toggle-male" type="checkbox">
+      <label for="checkbox-4-10"></label>
+      <div class="male"></div>
+      <input id="checkbox-4-11" class="toggle-female" type="checkbox">
+      <label for="checkbox-4-11"></label>
+      <div class="female"></div>
+      <input id="checkbox-4-12" class="toggle-ball ball-col-4" type="checkbox">
+      <label for="checkbox-4-12"></label>
+      <div class="ball"></div>
+
+      <input id="field-4-9" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-1" placeholder="Attack" readonly>
+      <input id="field-4-10" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-2" placeholder="Defense" readonly>
+      <input id="field-4-11" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-3" placeholder="Sp. Def" readonly>
+      <input id="field-4-12" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-4-4" placeholder="Natured" readonly>
+      <div class="iv iv-col-4">3x31</div>
+
+      <input class="button-min-4" onclick="minimize48()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-29" class="panel panel-default atk">
+      <input id="checkbox-1-85" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-85"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-86" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-86"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-87" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-87"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-29" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-15" class="panel panel-default atk-def">
+      <input id="checkbox-2-43" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-43"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-44" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-44"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-45" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-45"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-29" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-30" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Defense" readonly>
+      <div class="iv iv-col-2">2x31</div>
+
+      <input class="button-min-2" onclick="minimize35()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-30" class="panel panel-default def">
+      <input id="checkbox-1-88" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-88"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-89" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-89"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-90" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-90"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-30" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option>Attack</option>
+          <option selected>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-3-8" class="panel panel-default atk-def-nat">
+      <input id="checkbox-3-22" class="toggle-male" type="checkbox">
+      <label for="checkbox-3-22"></label>
+      <div class="male"></div>
+      <input id="checkbox-3-23" class="toggle-female" type="checkbox">
+      <label for="checkbox-3-23"></label>
+      <div class="female"></div>
+      <input id="checkbox-3-24" class="toggle-ball" type="checkbox">
+      <label for="checkbox-3-24"></label>
+      <div class="ball"></div>
+
+      <input id="field-3-22" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-1" placeholder="Attack" readonly>
+      <input id="field-3-23" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-2" placeholder="Defense" readonly>
+      <input id="field-3-24" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-3-3" placeholder="Natured" readonly>
+      <div class="iv iv-col-3">2x31</div>
+
+      <input class="button-min-3" onclick="minimize44()" type="image" src="assets/img/min.png">
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-31" class="panel panel-default atk">
+      <input id="checkbox-1-91" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-91"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-92" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-92"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-93" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-93"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-31" class="form-control form-control-col-1 transparent-input" disabled>
+          <option>HP</option>
+          <option selected>Attack</option>
+          <option>Defense</option>
+          <option>Sp. Atk</option>
+          <option>Sp. Def</option>
+          <option>Speed</option>
+        </select>
+      </div>
+      <div class="iv">1x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+    <div id="minimize-col-2-16" class="panel panel-default atk-nat">
+      <input id="checkbox-2-46" class="toggle-male" type="checkbox">
+      <label for="checkbox-2-46"></label>
+      <div class="male"></div>
+      <input id="checkbox-2-47" class="toggle-female" type="checkbox">
+      <label for="checkbox-2-47"></label>
+      <div class="female"></div>
+      <input id="checkbox-2-48" class="toggle-ball" type="checkbox">
+      <label for="checkbox-2-48"></label>
+      <div class="ball"></div>
+
+      <input id="field-2-31" type="text" class="form-control form-control-col-2 transparent-input input-sm input-field-col-2" placeholder="Attack" readonly>
+      <input id="field-2-32" type="text" class="form-control form-control-col-2 transparent-input input-sm" placeholder="Natured" readonly>
+      <div class="iv iv-col-2">1x31</div>
+
+      <input class="button-min-2" onclick="minimize36()" type="image" src="assets/img/min.png" />
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2">
+    <div id="minimize-col-1-32" class="panel panel-default nat">
+      <input id="checkbox-1-94" class="toggle-male" type="checkbox">
+      <label for="checkbox-1-94"></label>
+      <div class="male"></div>
+      <input id="checkbox-1-95" class="toggle-female" type="checkbox">
+      <label for="checkbox-1-95"></label>
+      <div class="female"></div>
+      <input id="checkbox-1-96" class="toggle-ball" type="checkbox">
+      <label for="checkbox-1-96"></label>
+      <div class="ball"></div>
+
+      <div class="form-group">
+        <select id="field-1-32" class="form-control form-control-col-1 transparent-input" disabled>
+          <option selected>Natured</option>
+        </select>
+      </div>
+      <div class="iv iv-0">0x31</div>
+    </div>
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+  <div class="col-xs-2">
+
+  </div>
+</div>
+<br>
+<br>
+<div class="msg">Made with &lt;3 by <a href="https://kbeflo.github.io" target="_blank">Kleo Bercero</a></div>
+<div class="msg">PokeMMO: Kleng</div>
+<div class="msg"><a href="https://forums.pokemmo.eu/index.php?/topic/49440-the-breeding-guide/" target="_blank">The Breeding Guide</a></div>
+<div class="msg"><a href="https://patreon.com/kbeflo" target="_blank">Donate</a></div>
+<br>
+<div class="msg">All logos, trademarks, and trade names used herein are the property of their respective owners.</div>
+
+<br>
+
+</html>
