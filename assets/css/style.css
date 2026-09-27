@@ -54,6 +54,21 @@ All logos, trademarks, and trade names used herein are the property of their res
   padding-left: 10px;
 }
 
+#progress-reset {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-family: 'pokemon_gbregular';
+  font-size: 10px;
+}
+
+#progress-reset.confirming {
+  background-color: #e74c3c;
+  color: white;
+}
+
 .iv {
   color: black;
   font-family: 'pokemon_gbregular';
