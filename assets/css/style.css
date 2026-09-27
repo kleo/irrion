@@ -228,6 +228,7 @@ div.minimize input {
 }
 
 .button-min-2 {
+  display: block;
   margin-top: -65px;
   margin-left: 140px;
   width: 10px;
@@ -237,6 +238,7 @@ div.minimize input {
 }
 
 .button-min-3 {
+  display: block;
   margin-top: -65px;
   margin-left: 140px;
   width: 10px;
@@ -246,6 +248,7 @@ div.minimize input {
 }
 
 .button-min-4 {
+  display: block;
   margin-top: -90px;
   margin-left: 140px;
   width: 10px;
@@ -255,6 +258,7 @@ div.minimize input {
 }
 
 .button-min-5 {
+  display: block;
   margin-top: -115px;
   margin-left: 140px;
   width: 10px;
@@ -264,6 +268,7 @@ div.minimize input {
 }
 
 .button-min-6 {
+  display: block;
   margin-top: -140px;
   margin-left: 140px;
   width: 10px;

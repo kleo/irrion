@@ -7,7 +7,7 @@
 .toggle-male + label{
   background: url('../img/male-0.png');
   position:relative;
-  display:inline-block;
+  display:block;
   width:9px;
   height:13px;
   margin-left: -15px;
@@ -46,11 +46,11 @@
 .toggle-ball + label{
   background: url('../img/ball-0.png');
   position:relative;
-  display:inline-block;
+  display:block;
   width:14px;
   height:14px;
   margin-left: -17px;
-  margin-top: 6px;
+  margin-top: 11px;
   z-index: 1;
 }
 .toggle-ball:checked + label{
@@ -63,11 +63,11 @@
 .ball-col-4.toggle-ball + label{
   background: url('../img/ball-0.png');
   position:relative;
-  display:inline-block;
+  display:block;
   width:14px;
   height:14px;
   margin-left: -17px;
-  margin-top: 31px;
+  margin-top: 36px;
   z-index: 1;
 }
 .ball-col-4.toggle-ball:checked + label{
@@ -80,11 +80,11 @@
 .ball-col-5.toggle-ball + label{
   background: url('../img/ball-0.png');
   position:relative;
-  display:inline-block;
+  display:block;
   width:14px;
   height:14px;
   margin-left: -17px;
-  margin-top: 56px;
+  margin-top: 61px;
   z-index: 1;
 }
 .ball-col-5.toggle-ball:checked + label{
@@ -97,11 +97,11 @@
 .ball-col-6.toggle-ball + label{
   background: url('../img/ball-0.png');
   position:relative;
-  display:inline-block;
+  display:block;
   width:14px;
   height:14px;
   margin-left: -17px;
-  margin-top: 81px;
+  margin-top: 86px;
   z-index: 1;
 }
 .ball-col-6.toggle-ball:checked + label{
