@@ -1,4 +1,4 @@
-var PROGRESS_KEY = storageKey("irrion-progress");
+var PROGRESS_KEY = "irrion-progress";
 
 function loadProgress() {
   try {
@@ -14,49 +14,56 @@ function saveProgress(progress) {
   } catch (e) {}
 }
 
-$(document).ready(function() {
+(function() {
   var progress = loadProgress();
-  var checkboxes = $("input[type=checkbox][id^=checkbox-]");
-  var balls = checkboxes.filter(".toggle-ball");
-  var resetButton = $("#progress-reset");
+  var checkboxes = Array.prototype.slice.call(document.querySelectorAll("input[type=checkbox][id^=checkbox-]"));
+  var balls = checkboxes.filter(function(checkbox) {
+    return checkbox.classList.contains("toggle-ball");
+  });
+  var resetButton = document.getElementById("progress-reset");
   var resetTimer = null;
 
   function updateCount() {
-    $("#progress-count").text(balls.filter(":checked").length);
+    document.getElementById("progress-count").textContent = balls.filter(function(ball) {
+      return ball.checked;
+    }).length;
   }
 
-  checkboxes.each(function() {
-    this.checked = progress[this.id] === true;
+  checkboxes.forEach(function(checkbox) {
+    checkbox.checked = progress[checkbox.id] === true;
+    checkbox.addEventListener("change", function() {
+      if (this.checked) {
+        progress[this.id] = true;
+      } else {
+        delete progress[this.id];
+      }
+      saveProgress(progress);
+      updateCount();
+    });
   });
-  $("#progress-total").text(balls.length);
+  document.getElementById("progress-total").textContent = balls.length;
   updateCount();
-
-  checkboxes.on("change", function() {
-    if (this.checked) {
-      progress[this.id] = true;
-    } else {
-      delete progress[this.id];
-    }
-    saveProgress(progress);
-    updateCount();
-  });
 
   function cancelReset() {
     clearTimeout(resetTimer);
     resetTimer = null;
-    resetButton.removeClass("confirming").text("Reset");
+    resetButton.classList.remove("confirming");
+    resetButton.textContent = "Reset";
   }
 
-  resetButton.on("click", function() {
+  resetButton.addEventListener("click", function() {
     if (resetTimer === null) {
-      resetButton.addClass("confirming").text("Sure?");
+      resetButton.classList.add("confirming");
+      resetButton.textContent = "Sure?";
       resetTimer = setTimeout(cancelReset, 3000);
       return;
     }
     cancelReset();
     progress = {};
     saveProgress(progress);
-    checkboxes.prop("checked", false);
+    checkboxes.forEach(function(checkbox) {
+      checkbox.checked = false;
+    });
     updateCount();
   });
-});
+})();

@@ -1,7 +1,7 @@
 // https://stackoverflow.com/a/48494583/10025507
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-var MINIMIZED_KEY = storageKey("irrion-minimized");
+var MINIMIZED_KEY = "irrion-minimized";
 
 function minimize(col, n) {
   var elements = [];
@@ -19,19 +19,21 @@ function minimize(col, n) {
   })(col, n);
 
   var firstChild = document.getElementById("minimize-col-" + (col - 1) + "-" + (2 * n - 1));
-  var hide = !$(firstChild).hasClass("minimized");
+  var hide = !firstChild.classList.contains("minimized");
 
-  $(elements).toggleClass("minimized", hide);
+  elements.forEach(function(element) {
+    element.classList.toggle("minimized", hide);
+  });
   saveMinimized();
 }
 
 function eachMinimizable(fn) {
-  $("[id^=minimize-col-]").each(function() {
-    fn(this.id, this);
+  document.querySelectorAll("[id^=minimize-col-]").forEach(function(box) {
+    fn(box.id, box);
 
-    var lineClass = this.id.replace("minimize-", "line-");
-    $("." + lineClass).each(function(i) {
-      fn(lineClass + "/" + i, this);
+    var lineClass = box.id.replace("minimize-", "line-");
+    Array.prototype.forEach.call(document.getElementsByClassName(lineClass), function(line, i) {
+      fn(lineClass + "/" + i, line);
     });
   });
 }
@@ -39,7 +41,7 @@ function eachMinimizable(fn) {
 function saveMinimized() {
   var keys = [];
   eachMinimizable(function(key, element) {
-    if ($(element).hasClass("minimized")) {
+    if (element.classList.contains("minimized")) {
       keys.push(key);
     }
   });
@@ -49,7 +51,7 @@ function saveMinimized() {
   } catch (e) {}
 }
 
-$(document).ready(function() {
+(function() {
   var keys;
   try {
     keys = JSON.parse(localStorage.getItem(MINIMIZED_KEY)) || [];
@@ -58,6 +60,6 @@ $(document).ready(function() {
   }
 
   eachMinimizable(function(key, element) {
-    $(element).toggleClass("minimized", keys.indexOf(key) !== -1);
+    element.classList.toggle("minimized", keys.indexOf(key) !== -1);
   });
-});
+})();

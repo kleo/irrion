@@ -4,32 +4,12 @@
 <head>
   <title>Irrion</title>
   <meta charset="utf-8" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="assets/js/jquery.connections.js"></script>
-  <script type="text/javascript" src="assets/js/tree.js"></script>
-  <script type="text/javascript" src="assets/js/connections.js"></script>
-  <script type="text/javascript" src="assets/js/minimize.js"></script>
-  <script type="text/javascript" src="assets/js/progress.js"></script>
-  <script type="text/javascript">
-    (function() {
-      var pending = false;
-      function redraw() {
-        if (pending) return;
-        pending = true;
-        requestAnimationFrame(function() {
-          pending = false;
-          $("connection").connections("update");
-        });
-      }
-      $(window).on("resize load", redraw);
-    })();
-  </script>
-
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/toggle.css">
+
+  <script type="text/javascript" src="assets/js/tree.js" defer></script>
+  <script type="text/javascript" src="assets/js/lines.js" defer></script>
+  <script type="text/javascript" src="assets/js/minimize.js" defer></script>
+  <script type="text/javascript" src="assets/js/progress.js" defer></script>
 
   <!-- https://realfavicongenerator.net/ -->
 
@@ -49,13 +29,10 @@
 
 <br>
 <div class="msg progress-status">
-  <label for="target-select">Target:</label>
-  <select id="target-select"></select>
   Progress: <span id="progress-count">0</span> / <span id="progress-total">0</span>
   <button id="progress-reset" type="button">Reset</button>
 </div>
 
-<!-- Bootstrap Grid https://buildbootstrap.com/ -->
 <br>
 <div id="tree"></div>
 <br>

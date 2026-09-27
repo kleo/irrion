@@ -19,32 +19,30 @@ All logos, trademarks, and trade names used herein are the property of their res
 
 }
 
-.panel {
-  width: 135px;
-  height: 50px;
-  border-color: black;
-  margin-left: 20px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.panel-col-4.panel {
-  width: 135px;
-  height: 75px;
-  border-color: black;
-  margin-left: 20px;
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
 }
 
-.panel-col-5.panel {
-  width: 135px;
-  height: 100px;
-  border-color: black;
-  margin-left: 20px;
+a {
+  color: #337ab7;
+  text-decoration: none;
 }
 
-.panel-col-6.panel {
-  width: 135px;
-  height: 125px;
-  border-color: black;
-  margin-left: 20px;
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
 }
 
 .msg {
@@ -52,20 +50,6 @@ All logos, trademarks, and trade names used herein are the property of their res
   font-family: 'pokemon_gbregular';
   font-size: 10px;
   padding-left: 10px;
-}
-
-.progress-status label {
-  font-weight: normal;
-}
-
-#target-select {
-  margin-right: 16px;
-  padding: 1px 2px;
-  border: 1px solid black;
-  border-radius: 3px;
-  background: none;
-  font-family: 'pokemon_gbregular';
-  font-size: 10px;
 }
 
 #progress-reset {
@@ -76,6 +60,7 @@ All logos, trademarks, and trade names used herein are the property of their res
   border-radius: 3px;
   font-family: 'pokemon_gbregular';
   font-size: 10px;
+  line-height: inherit;
 }
 
 #progress-reset.confirming {
@@ -83,329 +68,169 @@ All logos, trademarks, and trade names used herein are the property of their res
   color: white;
 }
 
-.iv {
+#tree {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), calc(100% / 6));
+  margin: 0 -15px;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.lines path {
+  fill: none;
+  stroke: gray;
+  stroke-width: 1px;
+}
+
+.node {
+  --height: 50px;
+  position: relative;
+  height: calc(var(--height) + 20px);
+}
+
+.node-col-4 {
+  --height: 75px;
+}
+
+.node-col-5 {
+  --height: 100px;
+}
+
+.node-col-6 {
+  --height: 125px;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  height: var(--height);
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.band {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 11px;
   color: black;
   font-family: 'pokemon_gbregular';
   font-size: 10px;
-  padding-left: 10px;
+  white-space: nowrap;
 }
 
-.iv-col-2.iv {
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-.iv-col-3.iv {
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-.iv-col-4.iv {
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-.iv-col-5.iv {
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-input {
- outline:none;
-}
-
-input.transparent-input{
-   background-color:rgba(0,0,0,0) !important;
-   border:none !important;
-}
-
-.form-control {
-  font-family: 'pokemon_gbregular';
+.node-col-1 .band {
+  padding-left: 14px;
   font-size: 14px;
-  color: black;
-  border: 0;
-  box-shadow: none;
 }
 
-select.form-control {
-  -moz-appearance: none;
-   -webkit-appearance: none;
-   appearance: none;
-   background-color:rgba(0,0,0,0) !important;
-}
-
-.form-control:focus {
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.form-control::placeholder {
-  color: black;
-}
-
-#checkbox-1 {
-  margin-left: -20px;
-  margin-top: 6px;
-}
-
-.form-control-col-1.form-control {
-  margin-top: -60px;
-  margin-bottom: -3px;
-  margin-left: 1px;
-  cursor: default;
-}
-
-.form-control-col-2.form-control {
-  font-size: 10px;
-  cursor: default;
-}
-
-.input-field-col-2 {
-  margin-top: -70px;
-  margin-bottom: -8px;
-}
-
-.input-field-col-3-1 {
-  margin-top: -76px;
-  margin-bottom: -14px;
-}
-
-.input-field-col-3-2 {
-  margin-bottom: -14px;
-}
-
-.input-field-col-3-3 {
-  margin-bottom: -4px;
-}
-
-.input-field-col-4-1 {
-  margin-top: -100px;
-  margin-bottom: -11px;
-}
-
-.input-field-col-4-2 {
-  margin-bottom: -14px;
-}
-
-.input-field-col-4-3 {
-  margin-top: 3px;
-}
-
-.input-field-col-4-4 {
-  margin-top: -12px;
-  margin-bottom: -4px;
-}
-
-.input-field-col-5-1 {
-  margin-top: -123px;
-  margin-bottom: -11px;
-}
-
-.input-field-col-5-2 {
-  margin-bottom: -11px;
-}
-
-.input-field-col-5-3 {
-  margin-bottom: -10px;
-}
-
-.input-field-col-5-4 {
-  margin-bottom: -10px;
-}
-
-.input-field-col-5-5 {
-  margin-bottom: -3.5px;
-}
-
-.input-field-col-6-1 {
-  margin-top: -149px;
-  margin-bottom: -9px;
-}
-
-.input-field-col-6-2 {
-  margin-bottom: -10px;
-}
-
-.input-field-col-6-3 {
-  margin-bottom: -10px;
-}
-
-.input-field-col-6-4 {
-  margin-bottom: -8px;
-}
-
-.input-field-col-6-5 {
-  margin-bottom: -9px;
-}
-
-.input-field-col-6-6 {
-  margin-bottom: -3.5px;
-}
-
-
-/* https://stackoverflow.com/a/1193338/10025507 */
-
-div.minimize input {
-    background:url(../img/min.png) no-repeat;
-    cursor:pointer;
-    width: 10px;
-    height: 10px;
-    border: none;
-    margin-left: 140px;
-    margin-top: -65px;
-}
-
-.button-min-2 {
-  display: block;
-  margin-top: -65px;
-  margin-left: 140px;
-  width: 10px;
-  height: 10px;
-  z-index: 1;
-  position: relative;
-}
-
-.button-min-3 {
-  display: block;
-  margin-top: -65px;
-  margin-left: 140px;
-  width: 10px;
-  height: 10px;
-  z-index: 1;
-  position: relative;
-}
-
-.button-min-4 {
-  display: block;
-  margin-top: -90px;
-  margin-left: 140px;
-  width: 10px;
-  height: 10px;
-  z-index: 1;
-  position: relative;
-}
-
-.button-min-5 {
-  display: block;
-  margin-top: -115px;
-  margin-left: 140px;
-  width: 10px;
-  height: 10px;
-  z-index: 1;
-  position: relative;
-}
-
-.button-min-6 {
-  display: block;
-  margin-top: -140px;
-  margin-left: 140px;
-  width: 10px;
-  height: 10px;
-}
-
-.panel-default.hp {
+.band.hp {
   background-color: #2980b9;
 }
 
-.panel-default.atk {
+.band.atk {
   background-color: #e74c3c;
 }
 
-.panel-default.def {
+.band.def {
   background-color: #e67e22;
 }
 
-.panel-default.spdef {
+.band.spdef {
   background-color: #8e44ad;
 }
 
-.panel-default.spd {
+.band.spd {
   background-color: #f1c40f;
 }
 
-.panel-default.nat {
+.band.nat {
   background-color: #27ae60;
 }
 
-.panel-default.hp-atk {
-  background: linear-gradient(#2980b9 50%, #e74c3c 50%);
+.iv {
+  position: absolute;
+  top: calc(var(--height) + 3px);
+  left: 36px;
+  padding-left: 10px;
+  color: black;
+  font-family: 'pokemon_gbregular';
+  font-size: 10px;
+  line-height: 14px;
 }
 
-.panel-default.hp-def {
-  background: linear-gradient(#2980b9 50%, #e67e22 50%);
+.node-col-1 .iv {
+  top: calc(var(--height) + 7px);
 }
 
-.panel-default.atk-def{
-  background: linear-gradient(#e74c3c 50%, #e67e22 50%);
+.minimize-button {
+  position: absolute;
+  top: 2px;
+  left: 176px;
+  width: 10px;
+  height: 10px;
 }
 
-.panel-default.atk-spdef {
-  background: linear-gradient(#e74c3c 50%, #8e44ad 50%);
+/* toggler https://stackoverflow.com/a/23069541/10025507 */
+
+.toggle-male,
+.toggle-female,
+.toggle-ball {
+  display: none;
 }
 
-.panel-default.def-spdef {
-  background: linear-gradient(#e67e22 50%, #8e44ad 50%);
+.toggle-male + label,
+.toggle-female + label {
+  position: absolute;
+  left: 21px;
+  width: 9px;
+  height: 13px;
 }
 
-.panel-default.def-spd {
-  background: linear-gradient(#e67e22 50%, #f1c40f 50%);
+.toggle-male + label {
+  top: 10px;
+  background: url('../img/male-0.png');
 }
 
-.panel-default.atk-nat {
-  background: linear-gradient(#e74c3c 50%, #27ae60 50%);
+.toggle-male:checked + label {
+  background: url('../img/male.png');
 }
 
-/* https://stackoverflow.com/a/47591284/10025507 */
-
-.panel-default.hp-atk-def {
-  background: linear-gradient(#2980b9 0, #2980b9 33%, #e74c3c 33%, #e74c3c 66%, #e67e22 66%, #e67e22 100%)
+.toggle-female + label {
+  top: 28px;
+  background: url('../img/female-0.png');
 }
 
-.panel-default.atk-def-spdef {
-  background: linear-gradient(#e74c3c 0, #e74c3c 33%, #e67e22 33%, #e67e22 66%, #8e44ad 66%, #8e44ad 100%)
+.toggle-female:checked + label {
+  background: url('../img/female.png');
 }
 
-.panel-default.def-spdef-spd {
-  background: linear-gradient(#e67e22 0, #e67e22 33%, #8e44ad 33%, #8e44ad 66%, #f1c40f 66%, #f1c40f 100%)
+.toggle-ball + label {
+  position: absolute;
+  top: calc(var(--height) + 2px);
+  left: 19px;
+  width: 14px;
+  height: 14px;
+  background: url('../img/ball-0.png');
 }
 
-.panel-default.atk-def-nat {
-  background: linear-gradient(#e74c3c 0, #e74c3c 33%, #e67e22 33%, #e67e22 66%, #27ae60 66%, #27ae60 100%)
-}
-
-.panel-default.hp-atk-def-spdef {
-  background: linear-gradient(#2980b9 0, #2980b9 25%, #e74c3c 25%, #e74c3c 50%, #e67e22 50%, #e67e22 75%, #8e44ad 75%, #8e44ad 100%)
-}
-
-.panel-default.atk-def-spdef-spd {
-  background: linear-gradient(#e74c3c 0, #e74c3c 25%, #e67e22 25%, #e67e22 50%, #8e44ad 50%, #8e44ad 75%, #f1c40f 75%, #f1c40f 100%)
-}
-
-.panel-default.atk-def-spdef-nat {
-  background: linear-gradient(#e74c3c 0, #e74c3c 25%, #e67e22 25%, #e67e22 50%, #8e44ad 50%, #8e44ad 75%, #27ae60 75%, #27ae60 100%)
-}
-
-.panel-default.hp-atk-def-spdef-spd {
-  background: linear-gradient(#2980b9 0, #2980b9 20%, #e74c3c 20%, #e74c3c 40%, #e67e22 40%, #e67e22 60%, #8e44ad 60%, #8e44ad 80%, #f1c40f 80%, #f1c40f 100%)
-}
-
-.panel-default.atk-def-spdef-spd-nat {
-  background: linear-gradient(#e74c3c 0, #e74c3c 20%, #e67e22 20%, #e67e22 40%, #8e44ad 40%, #8e44ad 60%, #f1c40f 60%, #f1c40f 80%, #27ae60 80%, #27ae60 100%)
-}
-
-.panel-default.hp-atk-def-spdef-spd-nat {
-  background: linear-gradient(#2980b9 0, #2980b9 16.66%, #e74c3c 16.66%, #e74c3c 33.32%, #e67e22 33.32%, #e67e22 49.48%, #8e44ad 49.48%, #8e44ad 66.64%, #f1c40f 66.64%, #f1c40f 83.3%, #27ae60 83.3%, #27ae60 100%)
-}
-
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
-connection {
-    border: 1px solid gray;
-    border-radius: 10px;
+.toggle-ball:checked + label {
+  background: url('../img/ball.png');
 }
 
 .minimized {
