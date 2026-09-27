@@ -66,6 +66,5 @@ var TREE_COLUMNS = buildTree(BREEDERS);
       html += nodeHtml(i + 1, j + 1, stats);
     });
   });
-  tree.style.setProperty("--columns", TREE_COLUMNS.length);
   tree.innerHTML = html;
 })();

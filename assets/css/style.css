@@ -68,11 +68,17 @@ a:focus {
   color: white;
 }
 
+.tree-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 #tree {
+  --pitch: calc((100% + 30px) / 6);
   position: relative;
   display: grid;
-  grid-template-columns: repeat(var(--columns), calc(100% / 6));
-  margin: 0 -15px;
+  grid-template-columns: calc(var(--pitch) - 15px) repeat(4, var(--pitch)) calc(var(--pitch) - 15px);
+  min-width: 1180px;
 }
 
 .lines {
@@ -95,6 +101,10 @@ a:focus {
   --height: 50px;
   position: relative;
   height: calc(var(--height) + 20px);
+}
+
+.node-col-1 {
+  margin-left: -15px;
 }
 
 .node-col-4 {
