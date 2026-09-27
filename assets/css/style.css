@@ -52,7 +52,8 @@ a:focus {
   padding-left: 10px;
 }
 
-#progress-reset {
+#progress-reset,
+#stats-reset {
   margin-left: 10px;
   padding: 2px 6px;
   background: none;
@@ -66,6 +67,30 @@ a:focus {
 #progress-reset.confirming {
   background-color: #e74c3c;
   color: white;
+}
+
+.stat-picker {
+  margin-top: 6px;
+}
+
+.stat-slot {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.stat-slot:last-child {
+  margin-right: 0;
+}
+
+.stat-slot select {
+  padding: 1px 2px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: none;
+  font-family: 'pokemon_gbregular';
+  font-size: 10px;
 }
 
 .tree-scroll {
@@ -159,6 +184,10 @@ a:focus {
 
 .band.def {
   background-color: #e67e22;
+}
+
+.band.spatk {
+  background-color: #e84393;
 }
 
 .band.spdef {
