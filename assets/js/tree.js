@@ -18,6 +18,34 @@ var BREEDERS = [
   "atk", "def", "atk", "spdef", "atk", "def", "atk", "nat"
 ];
 
+var TARGETS = [
+  { id: "2x31", label: "2x31", from: 0, to: 2 },
+  { id: "3x31", label: "3x31", from: 0, to: 4 },
+  { id: "4x31", label: "4x31", from: 0, to: 8 },
+  { id: "5x31", label: "5x31", from: 0, to: 16 },
+  { id: "2x31-nat", label: "2x31 Natured", from: 28, to: 32 },
+  { id: "3x31-nat", label: "3x31 Natured", from: 24, to: 32 },
+  { id: "4x31-nat", label: "4x31 Natured", from: 16, to: 32 },
+  { id: "5x31-nat", label: "5x31 Natured", from: 0, to: 32 }
+];
+
+var DEFAULT_TARGET = "5x31-nat";
+var TARGET_KEY = "irrion-target";
+
+var TARGET = (function() {
+  var id = DEFAULT_TARGET;
+  try {
+    id = localStorage.getItem(TARGET_KEY) || DEFAULT_TARGET;
+  } catch (e) {}
+
+  var matches = TARGETS.filter(function(target) { return target.id === id; });
+  return matches[0] || TARGETS.filter(function(target) { return target.id === DEFAULT_TARGET; })[0];
+})();
+
+function storageKey(base) {
+  return TARGET.id === DEFAULT_TARGET ? base : base + ":" + TARGET.id;
+}
+
 function buildTree(breeders) {
   var columns = [breeders.map(function(stat) { return [stat]; })];
 
@@ -104,6 +132,17 @@ function rowsHtml(columns, col, n) {
 }
 
 $(document).ready(function() {
-  var columns = buildTree(BREEDERS);
+  var columns = buildTree(BREEDERS.slice(TARGET.from, TARGET.to));
   $("#tree").html(rowsHtml(columns, columns.length, 1));
+
+  var select = $("#target-select");
+  TARGETS.forEach(function(target) {
+    select.append($("<option>").val(target.id).text(target.label));
+  });
+  select.val(TARGET.id).on("change", function() {
+    try {
+      localStorage.setItem(TARGET_KEY, this.value);
+    } catch (e) {}
+    location.reload();
+  });
 });

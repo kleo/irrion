@@ -1,4 +1,4 @@
-var PROGRESS_KEY = "irrion-progress";
+var PROGRESS_KEY = storageKey("irrion-progress");
 
 function loadProgress() {
   try {

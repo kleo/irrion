@@ -1,7 +1,7 @@
 // https://stackoverflow.com/a/48494583/10025507
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-var MINIMIZED_KEY = "irrion-minimized";
+var MINIMIZED_KEY = storageKey("irrion-minimized");
 
 function minimize(col, n) {
   var elements = [];
