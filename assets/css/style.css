@@ -190,10 +190,12 @@ a:focus {
 
 .minimize-button {
   position: absolute;
-  top: 2px;
-  left: 176px;
+  top: -4px;
+  left: 170px;
+  box-sizing: content-box;
   width: 10px;
   height: 10px;
+  padding: 6px;
 }
 
 /* toggler https://stackoverflow.com/a/23069541/10025507 */
@@ -239,10 +241,33 @@ a:focus {
   background: url('../img/ball-0.png');
 }
 
+.toggle-male + label::before,
+.toggle-female + label::before,
+.toggle-ball + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -12px;
+}
+
+.toggle-male + label::before {
+  top: -8px;
+}
+
+.toggle-female + label::before {
+  bottom: -6px;
+}
+
+.toggle-ball + label::before {
+  bottom: -8px;
+}
+
 .toggle-ball:checked + label {
   background: url('../img/ball.png');
 }
 
 .minimized {
-  opacity: 0;
+  visibility: hidden;
 }
