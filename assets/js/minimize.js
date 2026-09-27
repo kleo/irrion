@@ -1,6 +1,8 @@
 // https://stackoverflow.com/a/48494583/10025507
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
+var MINIMIZED_KEY = "irrion-minimized";
+
 function minimize(col, n) {
   var elements = [];
 
@@ -17,9 +19,45 @@ function minimize(col, n) {
   })(col, n);
 
   var firstChild = document.getElementById("minimize-col-" + (col - 1) + "-" + (2 * n - 1));
-  var opacity = firstChild.style.opacity === "0" ? "1" : "0";
+  var hide = !$(firstChild).hasClass("minimized");
 
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].style.opacity = opacity;
-  }
+  $(elements).toggleClass("minimized", hide);
+  saveMinimized();
 }
+
+function eachMinimizable(fn) {
+  $("[id^=minimize-col-]").each(function() {
+    fn(this.id, this);
+
+    var lineClass = this.id.replace("minimize-", "line-");
+    $("." + lineClass).each(function(i) {
+      fn(lineClass + "/" + i, this);
+    });
+  });
+}
+
+function saveMinimized() {
+  var keys = [];
+  eachMinimizable(function(key, element) {
+    if ($(element).hasClass("minimized")) {
+      keys.push(key);
+    }
+  });
+
+  try {
+    localStorage.setItem(MINIMIZED_KEY, JSON.stringify(keys));
+  } catch (e) {}
+}
+
+$(document).ready(function() {
+  var keys;
+  try {
+    keys = JSON.parse(localStorage.getItem(MINIMIZED_KEY)) || [];
+  } catch (e) {
+    keys = [];
+  }
+
+  eachMinimizable(function(key, element) {
+    $(element).toggleClass("minimized", keys.indexOf(key) !== -1);
+  });
+});
